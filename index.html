@@ -5,6 +5,12 @@
 This is also a comment.
 -->
   
+<!--A note on tabindex:
+tabindex=0 inserts the element into the tab order based on its location in the source code. If the element is already focusable there's no need to use this.
+tabindex=-1 makes the element programmatically focusable but doesn't include the element in the tab order (so it can't be reached via keyboard). An example of its use would be when moving focus to a summary of errors returned by a form. An event can move the user to the area of an error message, but the error summary itself won't be included in the tab order.
+tabindex=1+ is rarely a good idea, as it artificially imposes a tab order on the content.
+-->
+  
   <head>
     <meta name="description" content="This is a sample webpage to capture standard markup examples.">
     <title>Sample Webpage - Home</title>
@@ -12,25 +18,25 @@ This is also a comment.
   </head>
   
   <body>
-    <a href="#maincontent">Skip to main content</a>
+    <a href="#maincontent" tabindex=0>Skip to main content</a>
     <header role="banner">
       <h1>
-        <a href="elrosth.github.io"><img alt="Logo / Link to Homepage" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
+        <a href="elrosth.github.io"><img alt="Logo / Link to Homepage" tabindex=0 src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
         </a>
         Logo / Link to Homepage (h1)
       </h1>
-      <nav role="navigation">Upper-Banner Menu
+      <nav role="navigation" tabindex=0>Upper-Banner Menu
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <nav role="navigation">Lower-Banner Menu
+      <nav role="navigation" tabindex=0>Lower-Banner Menu
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
     <div id="maincontent" role="main">
       <div role="breadcrumbs"></div>
-      <h2>Content (h2)</h2>
+      <h2 tabindex=0>Content (h2)</h2>
       <h3>Subcontent (h3).</h3>
       <p>This is a paragraph tag.</p>
       <article>
@@ -55,7 +61,7 @@ This is also a comment.
       <div id="legal">
         <p>Copyright / legal info goes here.</p>
       </div>
-      <div id="backToTop">
+      <div id="backToTop" tabindex=0>
         <p>Back to Top Link goes here.</p>
       </div>
     </div>
