@@ -2,47 +2,57 @@
 <html lang="en" itemsscope itemtype="http://schema.org/WebPage">
   
   <head>
-    <meta content="This is a sample webpage to capture standard markup examples." name="description">
+    <meta name="description" content="This is a sample webpage to capture standard markup examples.">
     <title>Sample Webpage - Home</title>
     <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
-    <a href="#mainContent" tabindex="1">Skip to content</a>
-    <div id="pageHeader">
+    <a href="#maincontent" tabindex="1">Skip to main content</a>
+    <header role="banner">
       <h1>
-        <a href="elrosth.github.io"><img alt="red panda logo" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg" tabindex="2">
+        <a href="elrosth.github.io" tabindex="1"><img alt="Logo / Link to Homepage" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
         </a>
-        Sample Webpage (h1)
+        Logo / Link to Homepage (h1)
       </h1>
-      <h2 tabindex="3">Navigation (h2)</h2>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <main>
-      <h2 id="mainContent">
-        This is the main page content (h2).
-      </h2>
-      <p>
-        This is a paragraph tag.
-      </p>
+      <nav role="navigation">Upper-Banner Menu
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav role="navigation">Lower-Banner Menu
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <div id="maincontent" role="main">
+      <div role="breadcrumbs"></div>
+      <h2>Content (h2)</h2>
+      <h3>Subcontent (h3).</h3>
+      <p>This is a paragraph tag.</p>
       <article>
+        This is an article.
           <section>
-            Section 1
+            Section 1.
           </section>
           <section>
-            Section 2
+            Section 2.
           </section>
       </article>
       <img id="firstImage" alt="beach house" src="http://i.imgur.com/RRUe0Mo.png">
       <img id="secondImage" alt="red panda" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
-    </main>
-    <div id="pageFooter">
-      <div role="contentinfo" aria-label="Footer content">
+    </div>
+    <div id="footer" role="contentinfo" aria-label="Footer content">
+      <div id="social">
+        <p>Social media icons/links go here.</p>
       </div>
-      <div id="copyright">
+      <div id="sitemap">
+        <p>Sitemap goes here.</p>
+      </div>
+      <div id="legal">
+        <p>Copyright / legal info goes here.</p>
+      </div>
+      <div id="backToTop">
+        <p>Back to Top Link goes here.</p>
       </div>
     </div>
   </body>
