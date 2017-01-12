@@ -1,11 +1,10 @@
 h1 {
-  color: blue;
-  background-color: 000088;
+  color: black;
+  background-color: FFFFFF;
 }
 
 h2 {
-  color: gold;
-  background-color: turquoise
+  color: black;
 }
 
 img {
@@ -21,6 +20,5 @@ img {
 }
 
 a:visited {
- color: yellow;
- background-color: blue;
+ color: purple;
 }
