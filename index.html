@@ -1,38 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html itemsscope itemtype="http://schema.org/WebPage" lang="en">
   
   <head>
-    <title>Prime HTML & CSS Workshop - Home</title>
+    <meta content="This is a sample webpage to capture standard markup examples." name="description">
+    <title>Sample Webpage - Home</title>
     <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
-    <h1>Welcome to my website</h1>
-    <h2>This is a little smaller</h2>
-    <ul>
-      <h2>Unordered List</h2>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <ol>
-      <h2>Ordered List</h2>
-      <li><a href="contact.html">Contact</a></li>
-    </ol>
-    <div>
-      This is a div tag.
+    <div id="pageHeader">
+      <h1>
+        <img alt="red panda logo" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
+        Sample Webpage (h1)
+      </h1>
+      <h2>Navigation (h2)</h2>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <p>
-      This is a paragraph tag.
-    </p>
-    <article>
-        <section>
-          Section 1
-        </section>
-        <section>
-          Section 2
-        </section>
-    </article>
-    <img id="firstImage" alt="beach house" src="http://i.imgur.com/RRUe0Mo.png">
-    <img id="secondImage" alt="red panda" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
+    <main>
+      <div>
+        This is a div tag.
+      </div>
+      <p>
+        This is a paragraph tag.
+      </p>
+      <article>
+          <section>
+            Section 1
+          </section>
+          <section>
+            Section 2
+          </section>
+      </article>
+      <img id="firstImage" alt="beach house" src="http://i.imgur.com/RRUe0Mo.png">
+      <img id="secondImage" alt="red panda" src="http://www.jqueryscript.net/images/Simplest-Responsive-jQuery-Image-Lightbox-Plugin-simple-lightbox.jpg">
+    </main>
+    <div id="pageFooter">
+      <div role="contentinfo" aria-label="Footer content">
+      </div>
+      <div id="copyright">
+      </div>
+    </div>
   </body>
 
 </html>
